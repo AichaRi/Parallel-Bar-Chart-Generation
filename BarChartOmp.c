@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <omp.h>
 
-// testing push & pull
-
 int main() {
     int size, num_threads;
     printf("Enter the dataset size: ");
