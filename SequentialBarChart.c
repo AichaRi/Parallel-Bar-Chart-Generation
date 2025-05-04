@@ -2,7 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Function to generate and display bar chart
+// to compile and run this code 👇🏻
+// gcc -o SequentialBarChart SequentialBarChart.c        (Compile)
+// SequentialBarChart.exe (for windows)                  (Run)
+// ./SequentialBarChart   (for mac)                      (Run)
+
+
+// Sequential Function
 void generate_bar_chart(int* data, int size) {
     printf("\n--- Bar chart ---\n");
     for (int i = 0; i < size; i++) {
