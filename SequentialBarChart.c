@@ -1,13 +1,12 @@
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>  // included to measure time using clock() function
-
 // to compile and run this code 👇🏻
 // gcc -o SequentialBarChart SequentialBarChart.c        (Compile)
 // SequentialBarChart.exe (for windows)                  (Run)
 // ./SequentialBarChart   (for mac)                      (Run)
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>  // included to measure time using clock() function
 
 // Sequential Function
 void generate_bar_chart(int* data, int size) {
@@ -41,7 +40,8 @@ int main() {
     generate_bar_chart(data, size);
     clock_t end = clock();          // end measuring function time
 
-
+    double time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;
+    printf("\nTime taken to generate bar chart in Sequential: %.6f seconds\n", time_taken);
 
     free(data);
 
