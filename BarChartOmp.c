@@ -4,7 +4,7 @@
 
 int main() {
     int size, num_threads;
-    printf("Enter the dataset size: ");
+    printf("Enter the dataset size please: ");
     scanf("%d", &size);
 
     int* data = (int*)malloc(size * sizeof(int));
